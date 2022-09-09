@@ -48,7 +48,7 @@ const Nav = () => {
     }
 
   return (
-    <header className='fixed w-screen z-50 px-2 py-3 md:py-4 md:px-12 '>
+    <header className='fixed w-screen z-50 px-2 py-0 md:py-4 md:px-12 '>
         {/*Desktop*/}
         <div className='hidden md:flex items-center justify-between h-full w-full'>
             <Link to = "/" className='flex items-center gap-2'>
@@ -64,8 +64,7 @@ const Nav = () => {
                     exit = {{x: 300, opacity: 0.1 }} 
                 className='flex gap-10 ml-auto items-center'>
                     <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Home</li>
-                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Menu</li>
-                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>About us</li>
+                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Special menu</li>
                     <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Contact us</li>
                 </motion.ul>
                 <div className='relative items-center justify-center flex'>
