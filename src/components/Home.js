@@ -33,13 +33,13 @@ const Home = () => {
     </div>
 
     <div className='py-2 flex-1 flex items-center relative'>
-      <img src={bgright} className = "h-full w-full rounded-xl lg:h-685 lg:w-auto ml-auto" alt="right-bckground" /> 
+      <img src={bgright} className = "h-650 w-full rounded-xl lg:h-685 lg:w-auto ml-auto" alt="right-bckground" /> 
 
-      <div className = 'w-full absolute h-full flex flex-wrap items-center  justify-center top-0 left-0 px-32 py-4 gap-4'>
+      <div className = 'w-full absolute h-full flex flex-wrap items-center sjustify-center top-0 left-0 px-32 py-4 gap-4'>
 
         {homeData && homeData.map (data => (
 
-          <div key = {data.id}  className = "w-150 min-w-[120px] h-150 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col justify-center items-center">
+          <div key = {data.id}  className = "w-150 h-150 p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col justify-center items-center">
             <br />
             <br />
           <img src={data.imagesrc} alt="c1" className='w-40 -mt-20 h-44' />

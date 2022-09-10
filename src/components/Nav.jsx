@@ -63,9 +63,9 @@ const Nav = () => {
                     animate = {{x: 0, opacity: 1 }} 
                     exit = {{x: 300, opacity: 0.1 }} 
                 className='flex gap-10 ml-auto items-center'>
-                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Home</li>
-                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Special menu</li>
-                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in'>Contact us</li>
+                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in' onClick = {() => setIsMenu(false)}>Home</li>
+                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in' onClick = {() => setIsMenu(false)}>Special menu</li>
+                    <li className='text-textColor cursor-pointer hover:text-navColor duration-150 transition-all ease-in' onClick = {() => setIsMenu(false)}>Contact us</li>
                 </motion.ul>
                 <div className='relative items-center justify-center flex'>
                     <FiShoppingBag className='text-textColor text-2xl cursor-pointer'/>
@@ -90,9 +90,9 @@ const Nav = () => {
                     animate = {{opacity: 1, scale: 1}}
                     exit = {{opacity: 0, scale: 0.4}}
                      className='w-40  absolute top-10 right-0  flex flex-col text-sm px-3 py-2 bg-neutral-200 shadow-lg'>
-                        {user && user.email === "folamioluwapelumi1@gmail.com" && 
+                        { user && user.email === "folamioluwapelumi1@gmail.com" && 
                         <Link to = '/create'>                        
-                        <p className='p-2 items-center flex flex-row cursor-pointer hover:bg-slate-50 gap-2'>New Item <IoIosAddCircleOutline/> </p>
+                        <p className='p-2 items-center flex flex-row cursor-pointer hover:bg-slate-50 gap-2' onClick = {() => setIsMenu(false)}>New Item <IoIosAddCircleOutline/> </p>
                         </Link>
                         }
                         <p onClick={logout} className='p-2 items-center flex flex-row cursor-pointer hover:bg-slate-50 gap-2'>Log-out <TbLogout/></p>
