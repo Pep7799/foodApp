@@ -33,3 +33,26 @@ export const homeData = [
     
     }
 ] 
+
+export const categories = [
+    {
+        id: 1,
+        name: "Chicken",
+        urlName: "chicken",     
+    },
+    {
+        id: 2,
+        name: "Rice",
+        urlName: "rice",     
+    },
+    {
+        id: 1,
+        name: "Drinks",
+        urlName: "drinks",     
+    },
+    {
+        id: 1,
+        name: "Others",
+        urlName: "others",     
+    },
+]

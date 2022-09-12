@@ -34,8 +34,12 @@ const Home = () => {
 
     <div className='py-2 flex-1 flex items-center relative'>
       <img src={bgright} className = "h-650 w-full rounded-xl lg:h-685 lg:w-auto ml-auto" alt="right-bckground" /> 
+      <p className='rotate-90 absolute text-black text-md font-extrabold top-30 -left-40'>
+          Today's order! Don't  wait....let's add your to the list🌹
+        </p>
 
       <div className = 'w-full absolute h-full flex flex-wrap items-center sjustify-center top-0 left-0 px-32 py-4 gap-4'>
+        
 
         {homeData && homeData.map (data => (
 
